@@ -4,4 +4,14 @@ set number
 syntax on
 colorscheme fancycolors
 
+let mapleader="\<Space>"
+
+    "Clipboard stuff
+    nnoremap <leader>y :<C-u>exec 'normal ' . v:count1 . '"+yy'<CR>
+    vnoremap <leader>y "+y
+    nnoremap <leader>p :<C-u>exec 'normal ' . v:count1 . '"+p'<CR>
+    vnoremap <leader>p "+p
+    nnoremap <leader>d :<C-u>exec 'normal ' . v:count1 . '"+dd'<CR>
+    vnoremap <leader>d "+d
+
 inoremap jj <ESC>
